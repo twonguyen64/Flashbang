@@ -21,79 +21,117 @@
 
 
 /*GOOGLE DOCS HOMEPAGE*/
-    .docs-homescreen-grid-item-title, 
-    .docs-hs-tmp-contractedheader-text, 
-    .docs-homescreen-templates-templateview-title, 
-    .docs-homescreen-itemholder-content, 
-    .docs-homescreen-owner-filter-label-text{
-        color: white;
-    }
-    .docs-homescreen-templates-templateview-style, 
-    .docs-homescreen-grid-item-time-container, 
-    .docs-homescreen-grid-header-title {
-        color: #a6a6a6 !important;
+    .gb_Kd.gb_Nd.gb_Zd,              /*top banner*/
+    .docs-gm,                        /*background of webpage, required for refresh*/
+    .docs-homescreen-homescreenmain, /*background of webpage, required for refresh*/
+    .docs-homescreen-item-container,    
+    .docs-homescreen-floater-header,    
+    .docs-homescreen-list-header,
+    .docs-homescreen-grid-header
+        {background-color: #252525 !important;}
+
+    .docs-homescreen-fcc-flex,
+    .docs-homescreen-fcc-content 
+        {background-color: #373737 !important;}
+
+    .docs-homescreen-list-item,
+    .docs-homescreen-grid-item {
+        background-color: #272727 !important;
+        border-color: #373737 !important;
+        color: #dddddd !important;
     }
 
-    .docs-homescreen-fcc-content, 
-    .docs-homescreen-owner-filter-button, 
-    .goog-menu-button-open{
-        background-color: #2e2b2b !important;
-    }
-    .docs-homescreen-floater-header, .docs-homescreen-container{
-        background-color: #272524;
-    }
-        .goog-menuitem-content, .goog-menu-button-hover{
-            color: #5f5b5b !important;
-        }
-        .goog-menuitem-content:hover{
-            color: #1b1b1b !important;
-        }
-    .docs-homescreen-grid-header{
-        background: none;
-    }
-    .goog-control-hover{
-        border-radius: 0 !important;
-    }
-    .goog-control-open{
-        background-color: rgb(110, 110, 110) !important;
-    }
-        .docs-homescreen-grid-item{
-            border: 1px solid black;
-            background-color: #302f2f;
-        }
+    .gb_1c,                 /*main menu three lines (top left)*/
+    .gb_Oe.gb_Pe,           /*search icon which appears when window is narrow*/
+    #gbwa > .gb_D > .gb_B,  /*waffle*/
+    .docs-homescreen-floater-header-buttons .docs-homescreen-img,
+    .docs-homescreen-list-item-shared-icon,
+    .docs-homescreen-grid-item-shared-icon 
+        {filter: invert() !important;}
 
-/*TOP TOOLBAR SECTION*/
-#docs-chrome,
-.docs-titlebar-buttons{
-    background: #232323 !important;
-}
-.menu-button{
-    color: white !important;
-    margin-top: 0 !important;
-}
-.goog-control-hover{
-    background-color: #ffffff3e !important;
-}
-#docs-primary-toolbars,
-#docs-side-toolbar,
-.docs-titlebar-badge,
+    /*triple dot for each item*/
+    .docs-homescreen-item-overflow:hover,
+    .docs-homescreen-item-overflow:focus
+    {background-color: #8888882d !important;}
 
-.goog-toolbar-button,
-.goog-toolbar-menu-button,
-.docs-companion-app-switcher-container,
-.kix-titlebar-mode-switcher,
-#scb-quick-actions-menu
-{
-    background-color: var(--hue1) !important;
-}
+    .gb_Qd.gb_qd, /*"Docs" text in top banner*/
+    .docs-homescreen-templates-templateview-title,
+    .docs-homescreen-grid-item-title
+        {color: #dddddd !important;}
+        
+    /*doc templates*/
+    .docs-hs-tmp-contractedheader-text,
+    .docs-homescreen-templates-templateview-style,
+    /*header and list items*/
+    .docs-homescreen-floater-header-title,
+    .docs-homescreen-floater-header-time,
+    .docs-homescreen-list-item-owner, 
+    .docs-homescreen-list-item-time,
+    .docs-homescreen-list-header-title,
+    .docs-homescreen-grid-item-sort-identifier,
+    .docs-homescreen-grid-item-time
+        {color: #b4b4b4 !important;}
 
-.docs-titlebar-badge, 
-.jfk-button 
-#docs-toolbar-wrapper,
-#docs-title-widget,
-#docs-parent-collections-container-outer{
-    border-radius: 2px !important;
-}
+    .jfk-button-hover::before,
+    .jfk-button-focused::before,
+    .docs-homescreen-editorbar-actionbutton.goog-menu-button-hover::before 
+    {
+        background-color: rgba(0, 0, 0, 0.432) !important;
+        border-radius: 5% !important;
+    }
+    /*owned by anyone buttons*/
+    .docs-homescreen-owner-filter-button {
+        background-color: #1a1919 !important;
+        color: #c4c4c4 !important;
+    }
+    .docs-homescreen-owner-filter-button.goog-menu-button-hover,
+    .docs-homescreen-owner-filter-button.goog-menu-button-open,
+    .docs-homescreen-owner-filter-button.goog-menu-button-focused
+    {background-color: #383838 !important;}
+
+    .docsshared-menu-bubble .goog-menu
+    {background-color: #fffdfd !important;}
+
+
+
+
+
+
+/*GOOGLE DOCS EDITOR*/
+    body.docs-grille-gm3, /*main background, required for loading*/
+    #docs-chrome,
+    .docs-titlebar-buttons
+        {background-color: #232323 !important;}
+
+    
+    .kix-appview-editor,
+    .navigation-widget-floating-navigation-button.navigation-widget
+        {background-color: #282828 !important;}
+
+
+    /*TOP TOOLBAR SECTION*/
+    .menu-button{
+        color: white !important;
+        margin-top: 0 !important;
+    }
+    .goog-control-hover
+    {background-color: #ffffff1a !important;}
+    #docs-primary-toolbars,
+    #docs-side-toolbar,
+    .docs-titlebar-badge,
+    .goog-toolbar-button,
+    .goog-toolbar-menu-button,
+    .docs-companion-app-switcher-container,
+    .kix-titlebar-mode-switcher,
+    #scb-quick-actions-menu
+        {background-color: var(--hue1) !important;}
+
+    .docs-titlebar-badge, 
+    .jfk-button 
+    #docs-toolbar-wrapper,
+    #docs-title-widget,
+    #docs-parent-collections-container-outer
+        {border-radius: 2px !important;}
 
     /*Top left toolbar section*/
     #docs-menubar, #docs-titlebar-container{
@@ -110,7 +148,7 @@
         height: 25px !important;
     }
     .docs-title-input {
-        background-color: #212020 !important;
+        background-color: #232323 !important;
         color: transparent !important;
     }
     .docs-title-input-label {
@@ -148,90 +186,76 @@
         flex: 1;
     }
 
-/*GOOGLE DOCS EDITOR*/
-    .kix-appview-editor{
-        background-color: rgb(40, 40, 40) !important;
-    }
-    .navigation-widget-floating-navigation-button.navigation-widget{
-        background: #212020 !important;
-
-    }
-    .outlines-widget *{
-    color: #ffffff !important;
-    }
-    .navigation-item.location-indicator-highlight *{
-        color: var(--hue2) !important;
-    }
-    .navigation-item.goog-button-hover,
+    /*ACTUAL EDITING SPACE*/
     .goog-toolbar-button-hover, 
-    .goog-toolbar-menu-button-hover{
-        background-color: hsl(from var(--hue3) h s l / 0.2) !important;
-    }
+    .goog-toolbar-menu-button-hover
+    {background-color: hsl(from var(--hue3) h s l / 0.2) !important;}
+
+    .navigation-item-vertical-line > *
+        { background-color: rgb(78, 78, 78) !important;}
+
+    .navigation-widget-hat-close.goog-flat-button-hover .navigation-widget-hat-close-button-outer-box,
+    .kix-outlines-widget-header-add-chapter-button:not(.kix-outlines-widget-header-add-chapter-button-disabled) 
+    .jfk-button:hover,
+    .chapter-overflow-menu-button:hover,
+    .chapter-overflow-menu-button:focus-within,
+    .chapterItemArrowContainer:hover,
+    .chapter-item-label-and-buttons-container:not(.chapter-item-label-and-buttons-container-selected):hover
+        {background: rgba(255, 255, 255, 0.12) !important;}
+    
     .chapterItemIconContainer > .docs-icon,
     #docs-revisions-appbarbutton > .docs-icon,
     #docs-docos-commentsbutton > .docs-icon,
-    #docs-meet-in-editors-entrypointbutton > .goog-inline-block {
-        filter: invert() !important;
-    }
+    #docs-meet-in-editors-entrypointbutton > .goog-inline-block,
+    .docs-icon-arrow-back-dark,
+    .docs-icon-add-20x20,
+    .docs-icon-overflow-three-dots,
+    .docs-icon-arrow-drop-down-24x24,
+    .docs-icon-arrow-right-24x24,
+    .docs-icon-img.docs-icon-list-20x20,
+    .goog-flat-button.chapter-arrow > .docs-icon 
+        {filter:invert() !important;}
 
     .navigation-widget-row-controls-control, 
-    .navigation-widget-hat-close-button-outer-box,
-    .docs-floating-navigation-button-outer-box {
-        background: #c4c4c4 !important;
-    }
-    .navigation-widget-row-controls-control:hover, 
-    .navigation-widget-hat-close-button-outer-box:hover,
-    .docs-floating-navigation-button-outer-box:hover {
-        background: #999999 !important;
-    }
-    /*Oct. 15 2024 - Google docs tabs update*/
-    .chapter-item-label-and-buttons-container-selected {
-        background-color: #373737 !important;
-    }
-    .chapter-item-label-and-buttons-container {
-        border-radius: 8px !important
-    }
+    .docs-floating-navigation-button-outer-box 
+        {background: #c4c4c4 !important;}
+
+    .navigation-widget-row-controls-control:hover /*delete subsection X button*/
+        {background: var(--hue1) !important;}
     
-    .chapter-overflow-menu-button > .goog-button,
-    .navigation-widget-hat-close-button-outer-box.goog-inline-block {
-        background-color: var(--hue1) !important;
-    }
-    .kix-outlines-widget-header-contents {
-        background-color: transparent !important;
-    }
-    .chapter-item-label-and-buttons-container:hover {
-        background-color: hsl(from var(--hue3) h s l / 0.2) !important;
-    }
-    .goog-flat-button.chapter-arrow > .docs-icon {
-        filter: invert() !important;
-    }
-    .goog-flat-button.chapter-arrow:hover{
-        background-color: none !important;
+    .chapter-item-label-and-buttons-container-selected .chapter-item-icon .docs-icon-editors-ia-article-document
+        {filter: none !important;}
+    
+    .chapter-item-label-and-buttons-container-selected 
+        {background-color: hsl(from var(--hue1) h s l / 0.3) !important;}
+    .chapter-item-label-and-buttons-container 
+        {border-radius: 8px !important}
+    
+    .kix-outlines-widget-header-contents,
+    .goog-flat-button.chapter-arrow:hover
+        {background-color: transparent !important;}
+    
+    .miniChapterSwitcherCore 
+    .docs-material-gm-select 
+    .docs-material-gm-select-outer-box,
+    .miniChapterSwitcherNavigationEntryPointMask,
+    .miniChapterSwitcherNavigationEntryPointIcon
+    { 
+        background: #232323 !important;
+        border-radius: 0;
     }
 
-.goog-toolbar-menu-button-caption{
-    color: var(--filter1) !important;
-}
+    .outlines-widget *,
+    .miniChapterSwitcherChapterCountInfoText,
+    .miniChapterSwitcherSelectedChapterInfoText
+        {color: #e0e0e0 !important;}
 
-/*
-/*.kix-page-paginated{
-        filter: brightness(0.9);
-        will-change: filter;
-    }*/
+    .goog-toolbar-menu-button-caption
+        {color: var(--filter1) !important;}
 
-/*GOOGLE SLIDES*/
+    .navigation-item.location-indicator-highlight *
+        {color: var(--hue2) !important;}
 
-#filmstrip,
-.punch-filmstrip-scroll {
-    background-color: #1b1b1b !important;
-}
-#workspace-container {
-    background-color: rgb(40, 40, 40) !important;
-}
-.punch-filmstrip-thumbnail-pagenumber {
-    fill: #b0afaf !important;
-}
-#speakernotes-workspace-container,
-#speakernotes-workspace{
-    background-color: #d6d6d6 !important;
-}
+    .chapter-item-label-and-buttons-container:hover 
+        {color: hsl(from var(--hue3) h s l / 0.2) !important;}
+

@@ -4,105 +4,187 @@
     --hue3: hsl(228, 17%, 40%);
 }
 
+html {
+    --background2: var(--hue1);
+    --white: rgb(224, 224, 224);
+}
+
+/*popup faded background*/
+.Icbxye {background-color: black !important ;}
+/*hyperlinks on dark background*/
+.AeBiU-vQzf8d 
+    {color: hsl(from var(--hue3) h 80 80) !important;}
 /*LEFT SIDE TAB*/
-    .ALpC8b, .ZHllM, 
-    .YkfxEe, .gb_Wa,
-    .S630me, .owVllc{
-        background-color: var(--hue1) !important;
-        color: white !important;
-    }
-    .a-da-U *, .ZPnS1 *, .jGNTYb *, .yHnyPe.Tguc8d,
-    .gb_E, .wo35tf, .gb_sd
-    {
-    color: white !important;
-    }
-    /*folder highlight color*/
-    .a-U-ye-ha > .a-U-J{ 
-        background-color: rgb(22, 22, 22) !important;
-    }
-    .S630me {
-        border-radius: 0px;
-    }
-    .gb_Wa {
-        border: none !important;
-    }
 
-/*MAIN BODY*/
-    .g3Fmkb, 
-    .jLwBBf, 
-    .PolqHc, 
-    .Lxdbvc, 
-    .N7iPof,
-    .u2MXhc,
-    .VUa0J,
-    .eZQkd,
-     .iBEKub{
-        background-color: #313131 !important;
-    }
-    .jGNTYb *, .yHnyPe.Tguc8d, .h-sb-Ic, .WpZLE, .a-s-fa-Ha-pa.c-qd, .uXB7xe, .QsFsvc, .aViged, .TvarF, .PZFh5b, .gb_ld *{
-        color: rgb(247, 247, 224);
-    }
-    .gb_xe *{
-        color: black;
-    }
-    /*folder path color (appears at bottom)*/
-    .c-qd, .o-Yc-o-T, .Q6yead,.WYuW0e, .l-o-c-qd, .YUNZ4c, .N7iPof *, .GPeSMb, .cuTmdc, .PO9J1e, .mUIrbf-vQzf8d, #dnCage, .AdEoae, .ZqJeHd.a-c-d, .nrMpUc, .gb_td.gb_ad, .ZkrXVe{
-        color: rgb(187, 186, 186) !important;
-    }
+    .a-s-T,                         /*left side tab, drive tab*/
+    .a-s-T-j svg                    /*left side tab, drive tab icons*/
+        {color: rgb(185, 185, 185) !important;}
+    
 
-    /*some buttons at the top*/
+
+    .a-U-ye-ha > .a-U-J,            /*folder highlight color*/
+    .xDBFpb                         /*"items in trash will be deleted" background*/
+        {background-color: rgb(22, 22, 22) !important;}
+
+    .S630me {border-radius: 0px;}
+
+/*BACKGROUND COLOR*/
+    .uEnUtd, /*file edit option menu (appears when right clicking folder) */
+    .LVhrj,  /*file path (appears when right clicking folder)*/
+    .dKB4nf  /*folder/panel background*/
+        {background-color: black !important;}
+
+    .YkfxEe, /*top wrapper of page*/
+    .ZHllM,  /*left side tab, upper*/
+    .ALpC8b, /*left side tab, lower*/
+    .S630me, /*main page, upper wrapper*/
+    .owVllc  /*HOME, main page, upper wrapper*/
+        {background-color: var(--hue1) !important;}
+    
+    /*background2 seperates the leftside tab bar from the main drive area*/
+    .zyephd,        /*main area, footer*/
+    .ljKvWc.kKRUf,  /*footer*/
+    .PolqHc,        /*search bar*/
+    .iBEKub,        /*"type people modified" bar*/
+    .JhTLnc,        /*background of file edit options menu*/
+    .ljKvWc,        /*tab dropdown*/
+    .Oiqh8c.B3Kdce  /*file header box (list view, name, date, etc.)*/ 
+        {background-color: var(--background2) !important;}
+    
+
+    .QMCpLe :hover .dKB4nf  /*folder hover background color*/
+    .OhA4E .T4ACf           /*list/panel mode switching button (top right corner)*/
+        {background-color: white !important;} 
+    
+    .QMCpLe[aria-selected="true"] .dKB4nf,  /*folder select background color*/
+    .qwPkcb[aria-selected="true"],          /*file select background color*/
+    .xiDnqb:hover,                          /*list sort icon hover*/
+    .a-c-d.Nf                               /*info button highlight*/
+        {background-color: rgba(255, 255, 255, 0.07) !important} 
+
+/*TEXT/ICON COLOR*/
+    .a-U-ye-ha .a-s-T,                      /*left side tab, selected drive tab*/
+    .a-U-ye-ha svg,                         /*left side tab, selected icons*/
+    .gb_Qd.gb_qd,                           /*"Drive" text (top left corner)*/
+    .wo35tf,                                /*? icon (top right corner)*/
+    #OzMWY .a-s-fa-Ha-pa.c-qd,              /*gear icon (top right corner)*/
+    .gb_F,                                  /*waffle (top right corner)*/
+    .Q6yead.QJZfhe.mig17c,                  /*downwards caret button */
+    .Q6yead.QJZfhe.sEmnhc,                  /*shared icon*/
+    .XaJ1T.Q6yead.QJZfhe,                   /*list sort icon*/
+    .OhA4E .pVxgue:not(:disabled) .bBr1te,  /*list/panel mode switching button (top right corner)*/
+    .VfPpkd-kBDsod > .Q6yead.QJZfhe,        /*triple dot button*/
+    .a-s-fa-Ha-pa.c-qd,                     /*dropdown caret (for filepath)*/
+    .goen0e,                                /*folder/panel font*/
+    .QMCpLe[aria-selected="true"] .goen0e,  /*folder select text color*/
+    .QMCpLe[aria-selected="true"] .uSZ2u,   /*folder select subtitle text color*/
+    .h-v-x /*settings dropdown menu text*/
+        {color: var(--white) !important;}
+    
+    .h-sb-Ic.h-R-w-d-ff,
+    .tKKdVd > *,    /* "Welcome to Drive" text*/
+    .wRsS4e,        /* "Recent", "Starred", "Spam", "Storage" text*/
+    .TvarF          /* "Trash" text*/
+        {color: rgb(212, 212, 212) !important;}
+
+    .mUIrbf-vQzf8d,     /* "skip to main content" */
+    .ZkrXVe,            /* "Type, People, etc. buttons" */
+    .PO9J1e,            /* Type People etc. buttons icons*/
+    .cr-hTVF2c-r,       /* left side tab, "X GB of 15 GB used" */
+    .o-Yc-o-T,          /* Folder path (top) */
+    .Hvg8z,             /* HOME, "You opened, timestamp" text */
+    .qHF2df[style="color: var(--dt-on-surface-variant);"], /*non-colored folder*/
+    .zstEje,        /*"1 selected" text*/
+    .XUfxPb.M3pype, /*file header box (name, date, etc.) text */
+    .uSZ2u          /*folder/panel subtitle font*/
+        {color: rgb(187, 186, 186) !important;}
+
+    /*Invert svg colors*/
+    #aso_search_form_anchor > button > svg,         /*searchbar top buttons icons*/
+    .c-qd.EUL1W.vf9sSe,                             /*result, icons*/
+    nav.o-Yc .h-d.o-Yc-Vf-d.a-c-d > .c-Po > svg,    /*nav top filepath ... icon (appears at near top, big font)*/
+    .a-s-Ba-ic .h-sb-Ic.h-R-d.H-qa-H-d > div > svg, /*nav top filepath SHARED icon*/ 
+    .VfPpkd-kBDso > .NMm5M,                         /*nav bottom filepath SHARED icon*/ 
+    img.yix69e[src="https://drive-thirdparty.googleusercontent.com/16/type/audio/mp3"], /*mp3 icon*/
+    #qJTzr .Yb-Il-d-c-j /*+ icon on right side nav tab*/
+        {filter: invert() !important; }
+
+        
+        
+ /* SPECIFIC WEBPAGE PORTIONS */       
+    /*files in list view*/
+    .qwPkcb {border-bottom: 1px solid var(--hue1) !important;}   /*item (table) border bottom*/
+    .DNoYtb {color: var(--white) !important}               /*filename text color*/
+    .WQJtxb {color: rgb(182, 182, 182) !important}  /*file data text color*/
+
+
+
+    /*"type people modified" buttons*/
     .glX3de, .brbsPe{
         background-color: var(--hue2) !important;
-        color: white;
-        border: 3px solid var(--hue3);
+        color: var(--white) !important;
+        border: 3px solid var(--hue3) !important;
     }
     
-    /*folders (grid layout view)*/
-    .jGNTYb, .a-s-Ba-Ed-Be-nAm6yf, .YMooxe, .ZPnS1{ 
-        background-color: #212121 !important;
-        border: none !important;
-        border-radius: 0 !important;
+    /*search bar / search result menu*/
+    #gb form[role="search"]:not(.BvgNAf), /*searchbar position 1 (top)*/
+    #gb .a-WErN3d-OEtP0:not(.BvgNAf),
+    .gb_Fd.gb_Se.a-WErN3d-OEtP0,
+    .NRHSZb,        /*searchbar position 2 (middle)*/
+    .NRHSZb.BvgNAf,  /*searchbar selected*/
+    .o8od9, /*search results background, upper wrapper*/
+    .gssb_m /*search results background, lower wrapper*/
+    {
+        background-color: #1b1b1b !important; 
+        color: rgb(218, 218, 218) !important;
     }
-    .l-u-Ab-zb, .pYTkkf-c-kBDsod-Rtc0Jf{
-        background-color: rgb(38, 38, 38) !important;
-    }
-    .Lxdbvc{
-        padding-left: 10px;
-        margin-left: 0;
-    }
-
-    /*folders (list view)*/
-    .WYuW0e{
-        border-bottom-color: #0000002d !important;
-    }
+    .gb_ze.a-WErN3d-CQWwNe, /*searchbar text (position 1, Home)*/
+    .A8sZE
+        {color: rgb(218, 218, 218) !important; }
     
-    .aabwZd:not(.KBj6Qd) .GZwC2b, .f8nwhd-qb23S-b9nz9e-Qu-wk{
-        background-color: #4b5a64 !important;
-    }
+    .gb_ze.a-WErN3d-CQWwNe::placeholder, /*searchbar placeholder text (position 1)*/
+    .A8sZE::placeholder     
+        {color: rgb(179, 179, 179) !important; }
+    
 
-    /*workspace*/
-    .kRNxUc.V3vwXb{
-        background-color: var(--hue2) !important;
-        color: white !important; 
-        border: none !important;
-        border: 3px solid var(--hue3);
-    }
-    .AeBiU-vQzf8d{
-        color: white !important; 
-    }
-    .rTxrTb, .ab-S-V, .ab-S-Sg, .L17Que, .JDH2fe{
-        color: rgb(210, 210, 210) !important;
-    }
-    .O5x1db.ACGwFc, .dF0p9d.sV64Wc{
-        background-color: rgb(40, 40, 40) !important;
-    }
-    .XDBZ6 {
-        color: #212121 !important;
-    }
-    .OHeAue > .VfPpkd-dgl2Hf-ka-dd, .pc7nUb.XDBZ6.Dk9rmd {
-        background-color: var(--hue3) !important;
-    }
-    .VfPpkd-kBDsod > .Q6yead.QJZfhe{
-        background-color: rgb(255, 255, 255) !important;
-        color: rgb(40, 40, 40) !important;
+    .asor_b.asor_f /*result, filename*/
+    { color: white !important; }
+
+    .asor_c.asor_j, /*result, date time*/
+    .asor_e /*result, owner name*/
+    { color: #c0c0c0 !important; }
+
+    .gssb_i /*search result hover highlight*/
+    { background-color: var(--hue2) !important; }
+
+
+    /*the RIGHT-CLICK MENU for files & folders*/
+    .a-w,
+    .a-w-x,         /*option cell in the file dropdown menu (appears when clicked)*/
+    .h-Yo           /*option cell divider*/
+        {background-color: rgb(22, 22, 22) !important;}
+
+    .h-v.h-v-pc     /*option cell, selected*/
+        {background-color: #474747 !important;}    
+
+    .a-v-j > *,     /*option cell text (both left and right)*/
+    .h-ug-aa svg    /*option cell > caret*/
+        {color: #c0c0c0 !important;}
+
+    /*storage amount text*/
+    .PZFh5b {color: #e2e2e2 !important;}
+    .OjBtCb, 
+    .AdEoae,
+    #drive-details-soy-details .a-q-Xc-Ab
+    {color: #c0c0c0 !important;}
+
+    /*text that appears when trash/spam is empty*/
+    .PFjZL { color: #d3d2d2 !important; }
+    .p5oUyb { color: #a5a5a5 !important; }
+
+    /*settings info button at the banner at top of the webpage*/
+    .Hb-ja-Na .a-c-d.h-R-d-Pb,
+    #gb .M1zY4b .Ewn2Sd.kNRrie {
+        background-color: rgba(255, 255, 255, 0.12) !important;
+        outline: 1px solid hsl(from var(--hue3) h 80 80) !important;
     }

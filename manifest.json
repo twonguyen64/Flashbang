@@ -1,7 +1,11 @@
 {
     "manifest_version": 3,
     "name": "Flashbang",
+<<<<<<< HEAD
     "version": "2",
+=======
+    "version": "1.5.3",
+>>>>>>> 823173b199ff086494a13ea9654337556bf3c8ba
   
     "description": "Dark mode for D2L, Google Docs & Google Drive to ease those weary eyes.",
   
